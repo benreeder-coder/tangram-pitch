@@ -165,8 +165,8 @@ export default function Design5() {
                 ))}
               </div>
               <div className="pt-5 border-t border-[rgba(168,181,160,0.15)]">
-                <p className="font-[family-name:var(--font-karla)] text-[10px] tracking-[0.15em] uppercase text-[var(--color-wh-sage)] opacity-50 mb-2">Clients</p>
-                <p className="font-[family-name:var(--font-karla)] text-[12px] text-[var(--color-wh-sage)] opacity-70 leading-[1.6]">
+                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase text-[var(--color-wh-sage)] opacity-70 font-semibold mb-2">Clients</p>
+                <p className="font-[family-name:var(--font-karla)] text-[13px] text-[var(--color-wh-sage)] opacity-90 leading-[1.6]">
                   Basin Ventures, Coggno, Adspace, Applied Learning Technology Academy, True North PMP Consulting
                 </p>
               </div>
@@ -195,8 +195,8 @@ export default function Design5() {
                 ))}
               </div>
               <div className="pt-5 border-t border-[var(--color-wh-sage)] border-opacity-20">
-                <p className="font-[family-name:var(--font-karla)] text-[10px] tracking-[0.15em] uppercase opacity-30 mb-2">Clients</p>
-                <p className="font-[family-name:var(--font-karla)] text-[12px] opacity-45 leading-[1.6]">
+                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase opacity-60 font-semibold mb-2">Clients</p>
+                <p className="font-[family-name:var(--font-karla)] text-[13px] opacity-70 leading-[1.6]">
                   Basin Ventures, Coggno, Meydenbauer Partners, The Healthplex
                 </p>
               </div>
@@ -216,7 +216,7 @@ export default function Design5() {
               </div>
               <h3 className="font-[family-name:var(--font-baskerville)] text-xl mb-3">Process Automation</h3>
               <div className="space-y-2 mb-6 flex-1">
-                {['CRM automations &amp; workflows', 'Call transcription bank', 'Accessible context for content', 'Custom integrations'].map(item => (
+                {['Workflows with top image/video models (Remotion, NanoBanana, Veo, etc.)', 'CRM automations &amp; workflows', 'Call transcription bank', 'Accessible context for content', 'Custom integrations'].map(item => (
                   <div key={item} className="flex items-start gap-2.5">
                     <svg className="w-3.5 h-3.5 mt-0.5 shrink-0 opacity-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M5 12l5 5L20 7"/>
@@ -226,8 +226,8 @@ export default function Design5() {
                 ))}
               </div>
               <div className="pt-5 border-t border-[var(--color-wh-sage)] border-opacity-20">
-                <p className="font-[family-name:var(--font-karla)] text-[10px] tracking-[0.15em] uppercase opacity-30 mb-2">Clients</p>
-                <p className="font-[family-name:var(--font-karla)] text-[12px] opacity-45 leading-[1.6]">
+                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase opacity-60 font-semibold mb-2">Clients</p>
+                <p className="font-[family-name:var(--font-karla)] text-[13px] opacity-70 leading-[1.6]">
                   Kyle Hunt (Agency Operators), Meydenbauer Partners, Applied Learning Technology Academy, The Healthplex
                 </p>
               </div>
