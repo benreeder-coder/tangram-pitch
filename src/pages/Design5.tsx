@@ -199,7 +199,7 @@ export default function Design5() {
               <div className="pt-5 border-t border-[var(--color-wh-sage)] border-opacity-20">
                 <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase opacity-60 font-semibold mb-3">Clients</p>
                 <div className="space-y-1">
-                  {['Basin Ventures', 'Coggno', 'Meydenbauer Partners', 'The Healthplex'].map(name => (
+                  {['Basin Ventures', 'Coggno', 'Meydenbauer Partners', 'The Healthplex', 'Applied Learning Technology Academy', 'True North PMP Consulting'].map(name => (
                     <p key={name} className="font-[family-name:var(--font-karla)] text-[13px] text-[var(--color-wh-bark)] leading-[1.4]">{name}</p>
                   ))}
                 </div>
