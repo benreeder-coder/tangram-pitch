@@ -165,10 +165,12 @@ export default function Design5() {
                 ))}
               </div>
               <div className="pt-5 border-t border-[rgba(168,181,160,0.15)]">
-                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase text-[var(--color-wh-sage)] opacity-70 font-semibold mb-2">Clients</p>
-                <p className="font-[family-name:var(--font-karla)] text-[13px] text-[var(--color-wh-sage)] opacity-90 leading-[1.6]">
-                  Basin Ventures, Coggno, Adspace, Applied Learning Technology Academy, True North PMP Consulting
-                </p>
+                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase text-[var(--color-wh-cream)] opacity-70 font-semibold mb-3">Clients</p>
+                <div className="space-y-1">
+                  {['Basin Ventures', 'Coggno', 'Adspace', 'Applied Learning Technology Academy', 'True North PMP Consulting'].map(name => (
+                    <p key={name} className="font-[family-name:var(--font-karla)] text-[13px] text-[var(--color-wh-cream)] leading-[1.4]">{name}</p>
+                  ))}
+                </div>
               </div>
             </motion.div>
 
@@ -195,10 +197,12 @@ export default function Design5() {
                 ))}
               </div>
               <div className="pt-5 border-t border-[var(--color-wh-sage)] border-opacity-20">
-                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase opacity-60 font-semibold mb-2">Clients</p>
-                <p className="font-[family-name:var(--font-karla)] text-[13px] opacity-70 leading-[1.6]">
-                  Basin Ventures, Coggno, Meydenbauer Partners, The Healthplex
-                </p>
+                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase opacity-60 font-semibold mb-3">Clients</p>
+                <div className="space-y-1">
+                  {['Basin Ventures', 'Coggno', 'Meydenbauer Partners', 'The Healthplex'].map(name => (
+                    <p key={name} className="font-[family-name:var(--font-karla)] text-[13px] text-[var(--color-wh-bark)] leading-[1.4]">{name}</p>
+                  ))}
+                </div>
               </div>
             </motion.div>
 
@@ -226,10 +230,12 @@ export default function Design5() {
                 ))}
               </div>
               <div className="pt-5 border-t border-[var(--color-wh-sage)] border-opacity-20">
-                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase opacity-60 font-semibold mb-2">Clients</p>
-                <p className="font-[family-name:var(--font-karla)] text-[13px] opacity-70 leading-[1.6]">
-                  Kyle Hunt (Agency Operators), Meydenbauer Partners, Applied Learning Technology Academy, The Healthplex
-                </p>
+                <p className="font-[family-name:var(--font-karla)] text-[11px] tracking-[0.15em] uppercase opacity-60 font-semibold mb-3">Clients</p>
+                <div className="space-y-1">
+                  {['Kyle Hunt (Agency Operators)', 'Meydenbauer Partners', 'Applied Learning Technology Academy', 'The Healthplex'].map(name => (
+                    <p key={name} className="font-[family-name:var(--font-karla)] text-[13px] text-[var(--color-wh-bark)] leading-[1.4]">{name}</p>
+                  ))}
+                </div>
               </div>
             </motion.div>
           </div>
