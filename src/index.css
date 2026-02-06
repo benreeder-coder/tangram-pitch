@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  /* Design 1 - Architectural Blueprint */
+  --color-bp-navy: #0a1628;
+  --color-bp-slate: #1a2744;
+  --color-bp-copper: #c17f4e;
+  --color-bp-copper-light: #d4a574;
+  --color-bp-line: #2a3f66;
+  --color-bp-text: #c8d4e6;
+  --color-bp-grid: rgba(42, 63, 102, 0.3);
+
+  /* Design 2 - Editorial Magazine */
+  --color-ed-cream: #f5f0e8;
+  --color-ed-charcoal: #1a1a1a;
+  --color-ed-terracotta: #c45a3c;
+  --color-ed-warm: #8b6f4e;
+  --color-ed-light: #faf8f4;
+  --color-ed-rule: #d4c9b8;
+
+  /* Design 3 - Luxury Noir */
+  --color-lx-black: #0a0a0a;
+  --color-lx-dark: #141414;
+  --color-lx-gold: #c9a84c;
+  --color-lx-gold-light: #e4cc7a;
+  --color-lx-cream: #f0ebe0;
+  --color-lx-muted: #6b6b6b;
+
+  /* Design 4 - Bold Brutalist */
+  --color-br-black: #111111;
+  --color-br-concrete: #d4d0c8;
+  --color-br-orange: #e85d26;
+  --color-br-orange-dark: #c44a1a;
+  --color-br-white: #f8f6f2;
+  --color-br-gray: #888888;
+
+  /* Design 5 - Warm & Human */
+  --color-wh-sand: #f2ece4;
+  --color-wh-cream: #faf7f2;
+  --color-wh-forest: #2d5a3d;
+  --color-wh-forest-light: #3d7a52;
+  --color-wh-bark: #5c4033;
+  --color-wh-sage: #a8b5a0;
+  --color-wh-warm: #d4a574;
+
+  /* Font families */
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-fraunces: 'Fraunces', serif;
+  --font-manrope: 'Manrope', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-sora: 'Sora', sans-serif;
+  --font-space-mono: 'Space Mono', monospace;
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-baskerville: 'Libre Baskerville', serif;
+  --font-karla: 'Karla', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes drawLine {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes drawLineVertical {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
