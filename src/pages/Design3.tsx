@@ -5,7 +5,7 @@ const reveal = {
   hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
     opacity: 1, y: 0,
-    transition: { delay: i * 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }
+    transition: { delay: i * 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }
   })
 }
 
@@ -14,7 +14,7 @@ function GoldLine({ className = '' }: { className?: string }) {
     <motion.div
       initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] as const }}
       className={`origin-left h-px bg-gradient-to-r from-[var(--color-lx-gold)] via-[var(--color-lx-gold)] to-transparent opacity-30 ${className}`}
     />
   )

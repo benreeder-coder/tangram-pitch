@@ -4,7 +4,7 @@ const fade = {
   hidden: { opacity: 0, y: 24 },
   visible: (i: number) => ({
     opacity: 1, y: 0,
-    transition: { delay: i * 0.12, duration: 0.7, ease: [0.33, 1, 0.68, 1] }
+    transition: { delay: i * 0.12, duration: 0.7, ease: [0.33, 1, 0.68, 1] as const }
   })
 }
 
@@ -13,7 +13,7 @@ function Rule({ className = '' }: { className?: string }) {
     <motion.div
       initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }}
+      transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] as const }}
       className={`origin-left h-px bg-[var(--color-ed-rule)] ${className}`}
     />
   )
